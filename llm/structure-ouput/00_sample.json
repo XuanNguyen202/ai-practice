@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "product": { "type": "string" },
+    "price": { "type": "number", "minimum": 0 },
+    "in_stock": { "type": "boolean" },
+    "categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["product", "price", "in_stock"]
+}
